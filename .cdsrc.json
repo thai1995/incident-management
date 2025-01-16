@@ -1,0 +1,43 @@
+{
+    "odata": {
+        "containment": true
+    },
+    "features": {
+        "compat_restrict_bound": true
+    },
+    "requires": {
+        "[development]": {
+            "auth": {
+                "kind": "mocked",
+                "users": {
+                    "incident.support@tester.sap.com": {
+                        "password": "initial",
+                        "roles": [
+                            "support"
+                        ]
+                    },
+                    "alice": {
+                        "roles": [
+                            "support"
+                        ]
+                    },
+                    "bob": {
+                        "roles": [
+                            "support"
+                        ]
+                    }
+                }
+            }
+        },
+        "[production]": {
+            "db": "hana",
+            "auth": "xsuaa"
+        },
+        "destinations": true,
+        "html5-repo": true,
+        "workzone": true
+    },
+    "sql": {
+        "native_hana_associations": false
+    }
+}

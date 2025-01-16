@@ -1,0 +1,7 @@
+code,locale,name,descr
+N,en,New,New
+A,en,Assigned,Assigned
+I,en,In Process,In Process
+H,en,On Hold,On Hold
+R,en,Resolved,Resolved
+C,en,Closed,Closed

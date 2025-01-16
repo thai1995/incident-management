@@ -1,0 +1,18 @@
+{
+  "welcomeFile": "../webapp/index.html",
+  "authenticationMethod": "route",
+  "routes": [
+    {
+      "source": "^/?odata/(.*)$",
+      "target": "/odata/$1",
+      "destination": "incident-management-srv-api",
+      "authenticationType": "xsuaa",
+      "csrfProtection": true
+    },
+    {
+      "source": "^(.*)$",
+      "localDir": "../",
+      "authenticationType": "none"
+    }
+  ]
+}
