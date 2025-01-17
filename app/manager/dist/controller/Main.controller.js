@@ -1,0 +1,2 @@
+"use strict";sap.ui.define(["sap/ui/core/mvc/Controller","sap/ui/core/UIComponent"],function(t,o){"use strict";const n=t.extend("ns.manager.controller.Main",{onInit:function t(){},navToSpotStatus:function t(n){const e=n.getSource().getBindingContext("spotModel")?.getProperty("customerID");o.getRouterFor(this).navTo("RouteSpotStatus",{index:e})}});return n});
+//# sourceMappingURL=Main.controller.js.map

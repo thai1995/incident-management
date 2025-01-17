@@ -1,0 +1,2 @@
+"use strict";sap.ui.define(["sap/ui/core/message/MessageType"],function(e){"use strict";var t=function(e){e["High"]="H";e["Medium"]="M";e["Low"]="L";return e}(t||{});function r(r){if(r===t.High){return e.Error}else if(r===t.Medium){return e.Warning}return e.Information}function n(e){const t=new Date;const r=new Date(e);const n=Math.abs(r.getTime()-t.getTime());const i=Math.ceil(n/(1e3*60*60*24));if(i<=1)return`${i} day ago`;return`${i} days ago`}var i={__esModule:true};i.Urgency=t;i.formatHighlightColor=r;i.formatDaysAgo=n;return i});
+//# sourceMappingURL=util.js.map
